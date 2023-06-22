@@ -25,7 +25,7 @@ export default {
     },
     methods: {
         openLink() {
-            window.open(window.location.pathname + '/' + this.data._id, '_blank');
+            window.open(window.location.hostname + '/' + this.data._id, '_blank');
         },
         copyLink() {
             navigator.clipboard.writeText(window.location.hostname + '/' + this.data._id);
